@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="decodificador" Lut="18" T_Register="31(0)" T_Alu="28(0)" T_Lut="29(18)">
+<Module name="decodificador" T_Register="31(0)" T_Alu="28(0)" T_Lut="30(0)">
     <SubModule name="b1" Register="25" Alu="23" Lut="10" T_Register="25(25)" T_Alu="23(23)" T_Lut="10(10)"/>
-    <SubModule name="cnta" Register="6" Alu="5" Lut="1" T_Register="6(6)" T_Alu="5(5)" T_Lut="1(1)"/>
+    <SubModule name="cnta" Register="6" Alu="5" Lut="2" T_Register="6(6)" T_Alu="5(5)" T_Lut="2(2)"/>
+    <SubModule name="n" Lut="18" T_Lut="18(18)"/>
 </Module>

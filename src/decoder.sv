@@ -6,7 +6,7 @@ module blinky(input logic clk, output logic pulso_1hz);
 logic [23:0] conta;
 always_ff@(posedge clk)
 
-if(conta == 24'd13500000) begin 
+if(conta == 24'd1350000) begin 
     conta <=0;
     pulso_1hz <= ~pulso_1hz;
 end
@@ -19,8 +19,8 @@ endmodule
 module contador(input logic clk_in, rset, output logic[5:0] conta);
 
 always_ff@(posedge clk_in)
-conta <= conta + 1;
-
+if(!rset) conta <= 0;
+else conta <= conta + 1;
 
 endmodule
 
@@ -106,10 +106,18 @@ case(A)
     6'd62 : Y <= 6'b000111;
     6'd63 : Y <= 6'b001111;    
 
+//nuevo
+
 endcase
 
 endmodule
 
+
+module nega(input logic [5:0]A, output logic[5:0]Y);
+
+assign Y = ~A;
+
+endmodule
 
 module decodificador(input logic clk, rst, output logic [5:0] leds);
 
@@ -118,7 +126,7 @@ logic pulso_conta;
 
 blinky b1(clk, pulso_conta);
 contador cnta(pulso_conta,rst,conta_deco);
-assign leds = ~X;
+//assign leds = ~X;
 decoder dec(conta_deco,X);
-
+nega n(X,leds);
 endmodule
