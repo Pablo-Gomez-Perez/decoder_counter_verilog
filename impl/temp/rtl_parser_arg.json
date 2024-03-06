@@ -1,0 +1,17 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/git programing projects/SysVerilog/essentials_gates/impl/temp/rtl_parser.result",
+ "Top" : "decodificador",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

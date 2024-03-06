@@ -1,0 +1,832 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.9.01 (64-bit)"
+//Wed Mar  6 12:32:48 2024
+
+//Source file index table:
+//file0 "\C:/git\ programing\ projects/SysVerilog/essentials_gates/src/decoder.sv"
+`timescale 100 ps/100 ps
+module blinky (
+  clk_d,
+  pulso_conta
+)
+;
+input clk_d;
+output pulso_conta;
+wire n19_4;
+wire n19_5;
+wire n19_6;
+wire n19_7;
+wire n19_8;
+wire n19_9;
+wire n19_10;
+wire n19_11;
+wire n44_1;
+wire n44_2;
+wire n43_1;
+wire n43_2;
+wire n42_1;
+wire n42_2;
+wire n41_1;
+wire n41_2;
+wire n40_1;
+wire n40_2;
+wire n39_1;
+wire n39_2;
+wire n38_1;
+wire n38_2;
+wire n37_1;
+wire n37_2;
+wire n36_1;
+wire n36_2;
+wire n35_1;
+wire n35_2;
+wire n34_1;
+wire n34_2;
+wire n33_1;
+wire n33_2;
+wire n32_1;
+wire n32_2;
+wire n31_1;
+wire n31_2;
+wire n30_1;
+wire n30_2;
+wire n29_1;
+wire n29_2;
+wire n28_1;
+wire n28_2;
+wire n27_1;
+wire n27_2;
+wire n26_1;
+wire n26_2;
+wire n25_1;
+wire n25_2;
+wire n24_1;
+wire n24_2;
+wire n23_1;
+wire n23_2;
+wire n22_1;
+wire n22_0_COUT;
+wire n70_5;
+wire n45_6;
+wire [23:0] conta;
+wire VCC;
+wire GND;
+  LUT4 n19_s0 (
+    .F(n19_4),
+    .I0(conta[4]),
+    .I1(n19_5),
+    .I2(conta[5]),
+    .I3(n19_6) 
+);
+defparam n19_s0.INIT=16'h4000;
+  LUT3 n19_s1 (
+    .F(n19_5),
+    .I0(conta[7]),
+    .I1(conta[6]),
+    .I2(n19_7) 
+);
+defparam n19_s1.INIT=8'h40;
+  LUT4 n19_s2 (
+    .F(n19_6),
+    .I0(n19_8),
+    .I1(n19_9),
+    .I2(n19_10),
+    .I3(n19_11) 
+);
+defparam n19_s2.INIT=16'h8000;
+  LUT4 n19_s3 (
+    .F(n19_7),
+    .I0(conta[0]),
+    .I1(conta[1]),
+    .I2(conta[2]),
+    .I3(conta[3]) 
+);
+defparam n19_s3.INIT=16'h0001;
+  LUT4 n19_s4 (
+    .F(n19_8),
+    .I0(conta[12]),
+    .I1(conta[13]),
+    .I2(conta[14]),
+    .I3(conta[15]) 
+);
+defparam n19_s4.INIT=16'h8000;
+  LUT4 n19_s5 (
+    .F(n19_9),
+    .I0(conta[8]),
+    .I1(conta[9]),
+    .I2(conta[10]),
+    .I3(conta[11]) 
+);
+defparam n19_s5.INIT=16'h4000;
+  LUT4 n19_s6 (
+    .F(n19_10),
+    .I0(conta[20]),
+    .I1(conta[21]),
+    .I2(conta[22]),
+    .I3(conta[23]) 
+);
+defparam n19_s6.INIT=16'h1000;
+  LUT4 n19_s7 (
+    .F(n19_11),
+    .I0(conta[17]),
+    .I1(conta[16]),
+    .I2(conta[18]),
+    .I3(conta[19]) 
+);
+defparam n19_s7.INIT=16'h4000;
+  DFFR conta_22_s0 (
+    .Q(conta[22]),
+    .D(n23_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_21_s0 (
+    .Q(conta[21]),
+    .D(n24_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_20_s0 (
+    .Q(conta[20]),
+    .D(n25_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_19_s0 (
+    .Q(conta[19]),
+    .D(n26_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_18_s0 (
+    .Q(conta[18]),
+    .D(n27_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_17_s0 (
+    .Q(conta[17]),
+    .D(n28_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_16_s0 (
+    .Q(conta[16]),
+    .D(n29_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_15_s0 (
+    .Q(conta[15]),
+    .D(n30_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_14_s0 (
+    .Q(conta[14]),
+    .D(n31_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_13_s0 (
+    .Q(conta[13]),
+    .D(n32_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_12_s0 (
+    .Q(conta[12]),
+    .D(n33_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_11_s0 (
+    .Q(conta[11]),
+    .D(n34_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_10_s0 (
+    .Q(conta[10]),
+    .D(n35_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_9_s0 (
+    .Q(conta[9]),
+    .D(n36_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_8_s0 (
+    .Q(conta[8]),
+    .D(n37_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_7_s0 (
+    .Q(conta[7]),
+    .D(n38_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_6_s0 (
+    .Q(conta[6]),
+    .D(n39_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_5_s0 (
+    .Q(conta[5]),
+    .D(n40_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_4_s0 (
+    .Q(conta[4]),
+    .D(n41_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_3_s0 (
+    .Q(conta[3]),
+    .D(n42_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_2_s0 (
+    .Q(conta[2]),
+    .D(n43_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_1_s0 (
+    .Q(conta[1]),
+    .D(n44_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_0_s0 (
+    .Q(conta[0]),
+    .D(n45_6),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFR conta_23_s0 (
+    .Q(conta[23]),
+    .D(n22_1),
+    .CLK(clk_d),
+    .RESET(n19_4) 
+);
+  DFFE pulso_1hz_s1 (
+    .Q(pulso_conta),
+    .D(n70_5),
+    .CLK(clk_d),
+    .CE(n19_4) 
+);
+defparam pulso_1hz_s1.INIT=1'b0;
+  ALU n44_s (
+    .SUM(n44_1),
+    .COUT(n44_2),
+    .I0(conta[1]),
+    .I1(conta[0]),
+    .I3(GND),
+    .CIN(GND) 
+);
+defparam n44_s.ALU_MODE=0;
+  ALU n43_s (
+    .SUM(n43_1),
+    .COUT(n43_2),
+    .I0(conta[2]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n44_2) 
+);
+defparam n43_s.ALU_MODE=0;
+  ALU n42_s (
+    .SUM(n42_1),
+    .COUT(n42_2),
+    .I0(conta[3]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n43_2) 
+);
+defparam n42_s.ALU_MODE=0;
+  ALU n41_s (
+    .SUM(n41_1),
+    .COUT(n41_2),
+    .I0(conta[4]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n42_2) 
+);
+defparam n41_s.ALU_MODE=0;
+  ALU n40_s (
+    .SUM(n40_1),
+    .COUT(n40_2),
+    .I0(conta[5]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n41_2) 
+);
+defparam n40_s.ALU_MODE=0;
+  ALU n39_s (
+    .SUM(n39_1),
+    .COUT(n39_2),
+    .I0(conta[6]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n40_2) 
+);
+defparam n39_s.ALU_MODE=0;
+  ALU n38_s (
+    .SUM(n38_1),
+    .COUT(n38_2),
+    .I0(conta[7]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n39_2) 
+);
+defparam n38_s.ALU_MODE=0;
+  ALU n37_s (
+    .SUM(n37_1),
+    .COUT(n37_2),
+    .I0(conta[8]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n38_2) 
+);
+defparam n37_s.ALU_MODE=0;
+  ALU n36_s (
+    .SUM(n36_1),
+    .COUT(n36_2),
+    .I0(conta[9]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n37_2) 
+);
+defparam n36_s.ALU_MODE=0;
+  ALU n35_s (
+    .SUM(n35_1),
+    .COUT(n35_2),
+    .I0(conta[10]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n36_2) 
+);
+defparam n35_s.ALU_MODE=0;
+  ALU n34_s (
+    .SUM(n34_1),
+    .COUT(n34_2),
+    .I0(conta[11]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n35_2) 
+);
+defparam n34_s.ALU_MODE=0;
+  ALU n33_s (
+    .SUM(n33_1),
+    .COUT(n33_2),
+    .I0(conta[12]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n34_2) 
+);
+defparam n33_s.ALU_MODE=0;
+  ALU n32_s (
+    .SUM(n32_1),
+    .COUT(n32_2),
+    .I0(conta[13]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n33_2) 
+);
+defparam n32_s.ALU_MODE=0;
+  ALU n31_s (
+    .SUM(n31_1),
+    .COUT(n31_2),
+    .I0(conta[14]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n32_2) 
+);
+defparam n31_s.ALU_MODE=0;
+  ALU n30_s (
+    .SUM(n30_1),
+    .COUT(n30_2),
+    .I0(conta[15]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n31_2) 
+);
+defparam n30_s.ALU_MODE=0;
+  ALU n29_s (
+    .SUM(n29_1),
+    .COUT(n29_2),
+    .I0(conta[16]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n30_2) 
+);
+defparam n29_s.ALU_MODE=0;
+  ALU n28_s (
+    .SUM(n28_1),
+    .COUT(n28_2),
+    .I0(conta[17]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n29_2) 
+);
+defparam n28_s.ALU_MODE=0;
+  ALU n27_s (
+    .SUM(n27_1),
+    .COUT(n27_2),
+    .I0(conta[18]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n28_2) 
+);
+defparam n27_s.ALU_MODE=0;
+  ALU n26_s (
+    .SUM(n26_1),
+    .COUT(n26_2),
+    .I0(conta[19]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n27_2) 
+);
+defparam n26_s.ALU_MODE=0;
+  ALU n25_s (
+    .SUM(n25_1),
+    .COUT(n25_2),
+    .I0(conta[20]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n26_2) 
+);
+defparam n25_s.ALU_MODE=0;
+  ALU n24_s (
+    .SUM(n24_1),
+    .COUT(n24_2),
+    .I0(conta[21]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n25_2) 
+);
+defparam n24_s.ALU_MODE=0;
+  ALU n23_s (
+    .SUM(n23_1),
+    .COUT(n23_2),
+    .I0(conta[22]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n24_2) 
+);
+defparam n23_s.ALU_MODE=0;
+  ALU n22_s (
+    .SUM(n22_1),
+    .COUT(n22_0_COUT),
+    .I0(conta[23]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n23_2) 
+);
+defparam n22_s.ALU_MODE=0;
+  INV n70_s2 (
+    .O(n70_5),
+    .I(pulso_conta) 
+);
+  INV n45_s2 (
+    .O(n45_6),
+    .I(conta[0]) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* blinky */
+module contador (
+  pulso_conta,
+  conta_deco
+)
+;
+input pulso_conta;
+output [5:0] conta_deco;
+wire n10_1;
+wire n10_2;
+wire n9_1;
+wire n9_2;
+wire n8_1;
+wire n8_2;
+wire n7_1;
+wire n7_2;
+wire n6_1;
+wire n6_0_COUT;
+wire n11_6;
+wire VCC;
+wire GND;
+  DFF conta_4_s0 (
+    .Q(conta_deco[4]),
+    .D(n7_1),
+    .CLK(pulso_conta) 
+);
+  DFF conta_3_s0 (
+    .Q(conta_deco[3]),
+    .D(n8_1),
+    .CLK(pulso_conta) 
+);
+  DFF conta_2_s0 (
+    .Q(conta_deco[2]),
+    .D(n9_1),
+    .CLK(pulso_conta) 
+);
+  DFF conta_1_s0 (
+    .Q(conta_deco[1]),
+    .D(n10_1),
+    .CLK(pulso_conta) 
+);
+  DFF conta_0_s0 (
+    .Q(conta_deco[0]),
+    .D(n11_6),
+    .CLK(pulso_conta) 
+);
+  DFF conta_5_s0 (
+    .Q(conta_deco[5]),
+    .D(n6_1),
+    .CLK(pulso_conta) 
+);
+  ALU n10_s (
+    .SUM(n10_1),
+    .COUT(n10_2),
+    .I0(conta_deco[1]),
+    .I1(conta_deco[0]),
+    .I3(GND),
+    .CIN(GND) 
+);
+defparam n10_s.ALU_MODE=0;
+  ALU n9_s (
+    .SUM(n9_1),
+    .COUT(n9_2),
+    .I0(conta_deco[2]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n10_2) 
+);
+defparam n9_s.ALU_MODE=0;
+  ALU n8_s (
+    .SUM(n8_1),
+    .COUT(n8_2),
+    .I0(conta_deco[3]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n9_2) 
+);
+defparam n8_s.ALU_MODE=0;
+  ALU n7_s (
+    .SUM(n7_1),
+    .COUT(n7_2),
+    .I0(conta_deco[4]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n8_2) 
+);
+defparam n7_s.ALU_MODE=0;
+  ALU n6_s (
+    .SUM(n6_1),
+    .COUT(n6_0_COUT),
+    .I0(conta_deco[5]),
+    .I1(GND),
+    .I3(GND),
+    .CIN(n7_2) 
+);
+defparam n6_s.ALU_MODE=0;
+  INV n11_s2 (
+    .O(n11_6),
+    .I(conta_deco[0]) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* contador */
+module decodificador (
+  clk,
+  rst,
+  leds
+)
+;
+input clk;
+input rst;
+output [5:0] leds;
+wire clk_d;
+wire leds_d_5_4;
+wire leds_d_5_5;
+wire leds_d_5_6;
+wire leds_d_4_4;
+wire leds_d_4_5;
+wire leds_d_3_4;
+wire leds_d_3_5;
+wire leds_d_2_4;
+wire leds_d_2_5;
+wire leds_d_1_4;
+wire leds_d_0_4;
+wire leds_d_0_5;
+wire pulso_conta;
+wire [5:0] leds_d;
+wire [5:0] conta_deco;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  OBUF leds_0_obuf (
+    .O(leds[0]),
+    .I(leds_d[0]) 
+);
+  OBUF leds_1_obuf (
+    .O(leds[1]),
+    .I(leds_d[1]) 
+);
+  OBUF leds_2_obuf (
+    .O(leds[2]),
+    .I(leds_d[2]) 
+);
+  OBUF leds_3_obuf (
+    .O(leds[3]),
+    .I(leds_d[3]) 
+);
+  OBUF leds_4_obuf (
+    .O(leds[4]),
+    .I(leds_d[4]) 
+);
+  OBUF leds_5_obuf (
+    .O(leds[5]),
+    .I(leds_d[5]) 
+);
+  LUT4 leds_d_5_s (
+    .F(leds_d[5]),
+    .I0(leds_d_5_4),
+    .I1(leds_d_5_5),
+    .I2(conta_deco[5]),
+    .I3(leds_d_5_6) 
+);
+defparam leds_d_5_s.INIT=16'h3FA0;
+  LUT4 leds_d_4_s (
+    .F(leds_d[4]),
+    .I0(leds_d_4_4),
+    .I1(leds_d_5_4),
+    .I2(conta_deco[5]),
+    .I3(leds_d_4_5) 
+);
+defparam leds_d_4_s.INIT=16'h3FA0;
+  LUT4 leds_d_3_s (
+    .F(leds_d[3]),
+    .I0(leds_d_3_4),
+    .I1(leds_d_4_4),
+    .I2(conta_deco[5]),
+    .I3(leds_d_3_5) 
+);
+defparam leds_d_3_s.INIT=16'h3FA0;
+  LUT4 leds_d_2_s (
+    .F(leds_d[2]),
+    .I0(leds_d_3_4),
+    .I1(leds_d_2_4),
+    .I2(conta_deco[5]),
+    .I3(leds_d_2_5) 
+);
+defparam leds_d_2_s.INIT=16'h50CF;
+  LUT4 leds_d_1_s (
+    .F(leds_d[1]),
+    .I0(leds_d_3_4),
+    .I1(leds_d_5_5),
+    .I2(conta_deco[4]),
+    .I3(leds_d_1_4) 
+);
+defparam leds_d_1_s.INIT=16'hA03F;
+  LUT3 leds_d_0_s (
+    .F(leds_d[0]),
+    .I0(leds_d_0_4),
+    .I1(leds_d_0_5),
+    .I2(conta_deco[5]) 
+);
+defparam leds_d_0_s.INIT=8'h35;
+  LUT4 leds_d_5_s0 (
+    .F(leds_d_5_4),
+    .I0(conta_deco[0]),
+    .I1(conta_deco[3]),
+    .I2(conta_deco[1]),
+    .I3(conta_deco[2]) 
+);
+defparam leds_d_5_s0.INIT=16'hDF30;
+  LUT4 leds_d_5_s1 (
+    .F(leds_d_5_5),
+    .I0(conta_deco[1]),
+    .I1(conta_deco[0]),
+    .I2(conta_deco[3]),
+    .I3(conta_deco[2]) 
+);
+defparam leds_d_5_s1.INIT=16'hEF08;
+  LUT4 leds_d_5_s2 (
+    .F(leds_d_5_6),
+    .I0(leds_d_3_4),
+    .I1(leds_d_2_4),
+    .I2(conta_deco[5]),
+    .I3(conta_deco[4]) 
+);
+defparam leds_d_5_s2.INIT=16'h03FA;
+  LUT4 leds_d_4_s0 (
+    .F(leds_d_4_4),
+    .I0(conta_deco[0]),
+    .I1(conta_deco[1]),
+    .I2(conta_deco[3]),
+    .I3(conta_deco[2]) 
+);
+defparam leds_d_4_s0.INIT=16'hF38E;
+  LUT4 leds_d_4_s1 (
+    .F(leds_d_4_5),
+    .I0(leds_d_2_4),
+    .I1(leds_d_5_5),
+    .I2(conta_deco[5]),
+    .I3(conta_deco[4]) 
+);
+defparam leds_d_4_s1.INIT=16'h0CFA;
+  LUT4 leds_d_3_s0 (
+    .F(leds_d_3_4),
+    .I0(conta_deco[0]),
+    .I1(conta_deco[1]),
+    .I2(conta_deco[3]),
+    .I3(conta_deco[2]) 
+);
+defparam leds_d_3_s0.INIT=16'h71CF;
+  LUT4 leds_d_3_s1 (
+    .F(leds_d_3_5),
+    .I0(leds_d_5_5),
+    .I1(leds_d_5_4),
+    .I2(conta_deco[5]),
+    .I3(conta_deco[4]) 
+);
+defparam leds_d_3_s1.INIT=16'h0CF5;
+  LUT4 leds_d_2_s0 (
+    .F(leds_d_2_4),
+    .I0(conta_deco[0]),
+    .I1(conta_deco[1]),
+    .I2(conta_deco[3]),
+    .I3(conta_deco[2]) 
+);
+defparam leds_d_2_s0.INIT=16'h30EF;
+  LUT4 leds_d_2_s1 (
+    .F(leds_d_2_5),
+    .I0(leds_d_5_4),
+    .I1(leds_d_4_4),
+    .I2(conta_deco[5]),
+    .I3(conta_deco[4]) 
+);
+defparam leds_d_2_s1.INIT=16'h03FA;
+  LUT4 leds_d_1_s0 (
+    .F(leds_d_1_4),
+    .I0(leds_d_4_4),
+    .I1(leds_d_2_4),
+    .I2(conta_deco[4]),
+    .I3(conta_deco[5]) 
+);
+defparam leds_d_1_s0.INIT=16'h0CFA;
+  LUT4 leds_d_0_s0 (
+    .F(leds_d_0_4),
+    .I0(conta_deco[1]),
+    .I1(conta_deco[3]),
+    .I2(conta_deco[4]),
+    .I3(conta_deco[2]) 
+);
+defparam leds_d_0_s0.INIT=16'hBD4B;
+  LUT4 leds_d_0_s1 (
+    .F(leds_d_0_5),
+    .I0(conta_deco[1]),
+    .I1(conta_deco[3]),
+    .I2(conta_deco[2]),
+    .I3(conta_deco[4]) 
+);
+defparam leds_d_0_s1.INIT=16'hF24F;
+  blinky b1 (
+    .clk_d(clk_d),
+    .pulso_conta(pulso_conta)
+);
+  contador cnta (
+    .pulso_conta(pulso_conta),
+    .conta_deco(conta_deco[5:0])
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* decodificador */

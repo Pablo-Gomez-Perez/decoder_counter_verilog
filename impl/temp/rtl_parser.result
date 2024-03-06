@@ -1,0 +1,36 @@
+[
+ {
+  "InstFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+  "InstLine" : 114,
+  "InstName" : "decodificador",
+  "ModuleFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+  "ModuleLine" : 114,
+  "ModuleName" : "decodificador",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+    "InstLine" : 119,
+    "InstName" : "b1",
+    "ModuleFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+    "ModuleLine" : 4,
+    "ModuleName" : "blinky"
+   },
+   {
+    "InstFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+    "InstLine" : 120,
+    "InstName" : "cnta",
+    "ModuleFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+    "ModuleLine" : 19,
+    "ModuleName" : "contador"
+   },
+   {
+    "InstFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+    "InstLine" : 122,
+    "InstName" : "dec",
+    "ModuleFile" : "C:/git programing projects/SysVerilog/essentials_gates/src/decoder.sv",
+    "ModuleLine" : 28,
+    "ModuleName" : "decoder"
+   }
+  ]
+ }
+]
